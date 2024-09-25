@@ -23,8 +23,16 @@ export default function RemoveBtn({ id }) {
   };
 
   return (
-    
+
     <Button onClick={removeProduct} variant="contained" color="success" size="small">
+
+    <Button
+      onClick={removeProduct}
+      variant="contained"
+      color="success"
+      size="large"
+    >
+
       <DeleteIcon />
     </Button>
   );

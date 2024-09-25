@@ -64,8 +64,15 @@ export default function AddProduct() {
 
   return (
     <>
-      <div className="flex justify-between items-center ml-24">
-        <h1 className="font-bold py-10 text-2xl">Add New Product</h1>
+      <div className="flex justify-center items-center ">
+        <Button
+          variant="contained"
+          color="success"
+          className="text-xl font-bold px-20 py-3 mt-5"
+          size="large"
+        >
+          เพิ่มรายการ
+        </Button>
       </div>
       <form onSubmit={handleSubmit} className="flex flex-col gap-3">
         <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-10 ml-24">
@@ -333,17 +340,7 @@ export default function AddProduct() {
             className="btn btn-primary w-full max-w-xs ml-24"
           >
             Add Product
-            
-          </button> */}
-            <Button
-             type="submit"
-                        variant="contained"
-                        color="primary"
-                        className="font-bold px-20 py-3"
-                        size="small"
-                      >
-                         Add Product
-                      </Button>
+          </button>
         </div>
       </form>
     </>
