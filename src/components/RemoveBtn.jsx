@@ -23,10 +23,8 @@ export default function RemoveBtn({ id }) {
   };
 
   return (
-    // <button onClick={removeProduct} className="btn btn-error ml-2">
-    //     Delete
-    // </button>
-    <Button onClick={removeProduct} variant="contained" color="success">
+    
+    <Button onClick={removeProduct} variant="contained" color="success" size="small">
       <DeleteIcon />
     </Button>
   );

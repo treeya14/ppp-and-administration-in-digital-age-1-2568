@@ -3,6 +3,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Button from "@mui/material/Button";
 
 export default function AddProduct() {
   const [name, setName] = useState("");
@@ -327,12 +328,22 @@ export default function AddProduct() {
         </div>
 
         <div className="flex justify-center items-center mt-10">
-          <button
+          {/* <button
             type="submit"
             className="btn btn-primary w-full max-w-xs ml-24"
           >
             Add Product
-          </button>
+            
+          </button> */}
+            <Button
+             type="submit"
+                        variant="contained"
+                        color="primary"
+                        className="font-bold px-20 py-3"
+                        size="small"
+                      >
+                         Add Product
+                      </Button>
         </div>
       </form>
     </>
