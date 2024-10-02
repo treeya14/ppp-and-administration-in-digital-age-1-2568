@@ -1,6 +1,5 @@
 //components\RemoveBtn.jsx
 "use client";
-
 import * as React from "react";
 import Button from "@mui/material/Button";
 import DeleteIcon from "@mui/icons-material/Delete";
@@ -23,16 +22,12 @@ export default function RemoveBtn({ id }) {
   };
 
   return (
-
-    <Button onClick={removeProduct} variant="contained" color="success" size="small">
-
-    <Button
-      onClick={removeProduct}
-      variant="contained"
-      color="success"
-      size="large"
+    <Button 
+    onClick={removeProduct} 
+    variant="contained" 
+    color="success" 
+    size="small"
     >
-
       <DeleteIcon />
     </Button>
   );

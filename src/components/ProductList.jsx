@@ -34,26 +34,15 @@ export default async function ProductsList() {
           </h1>
         </div>
         <div className="text-left ml-16">
-          <Link  href={"/addProduct"}>
-
-            <Button
-                        variant="contained"
-                        color="primary"
-                        className="font-bold py-2"
-                        size="small"
-                      >
-                         Add Product
-                      </Button>
           <Link href={"/addProduct"}>
             <Button
               variant="contained"
-              color="success"
-              className="font-bold py-3"
-              size="large"
+              color="primary"
+              className="font-bold py-2"
+              size="small"
             >
-              เพิ่มรายการ
+              Add Product
             </Button>
-
           </Link>
         </div>
         <table className="table">
@@ -85,9 +74,6 @@ export default async function ProductsList() {
             </tr>
           </thead>
           <tbody>
-            {products.map((element,index) => (
-              <tr className="hover" key={element._id}>
-                <th>{index + 1}</th>
             {products.map((element, index) => (
               <tr className="hover" key={element._id}>
                 <th>{index + 1}</th>
@@ -112,7 +98,6 @@ export default async function ProductsList() {
                         color="success"
                         className="mr-2"
                         size="small"
-                    
                       >
                         <EditIcon />
                       </Button>
